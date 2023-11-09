@@ -2,6 +2,10 @@ body{
   background-color: rgb(228, 99, 120);
 }
 
+.container{
+  margin: 0 auto;
+}
+
 .title{
   text-align: center;
 }
@@ -47,5 +51,24 @@ font-size: 1.5em;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  #result{
+    font-size: 2em;
+  }
+
+  .Myinput{
+    font-size: 1em;
+  }
+
+  input{
+    font-size: 2em
+  }
+
+  #btn{
+    font-size: 0.75em;
+  }
+  .container{
+    margin: 0 auto;
   }
 }
