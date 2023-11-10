@@ -1,13 +1,3 @@
-//if enter key is clicked instead of button
-// $(document).keydown(function(e){
-//   var key = e.which;
-
-//   if(key == 13){
-//     calc();
-//     $("#btn").hide();
-//   }
-// });
-
 function screenSize(){
   if (window.innerWidth <= 768) {
     var btn2 = $('<button>Generate!</button>');
