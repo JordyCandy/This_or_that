@@ -1,11 +1,40 @@
 //if enter key is clicked instead of button
-$(document).keydown(function(e){
-  var key = e.which;
+// $(document).keydown(function(e){
+//   var key = e.which;
 
-  if(key == 13){
-    calc();
-    $("#btn").hide();
-  }
+//   if(key == 13){
+//     calc();
+//     $("#btn").hide();
+//   }
+// });
+
+function screenSize(){
+  if (window.innerWidth <= 768) {
+    var btn2 = $('<button>Generate!</button>');
+    btn2.addClass('btn2'); 
+    $('body').append(btn2);
+
+      btn2.click(function(e) {
+        calc();
+    });
+}else{
+  $(document).keydown(function(e){
+    var key = e.which;
+  
+    if(key == 13){
+      calc();
+      $("btn2").hide();
+    }
+  });
+}
+}
+
+$(document).ready(function() {
+  screenSize();
+});
+
+$("btn2").click(function(e){
+  calc();
 });
 
 function calc(){

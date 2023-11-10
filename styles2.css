@@ -1,5 +1,5 @@
 body{
-  background-color: rgb(228, 99, 120);
+  background-color: #d43b54;
 }
 
 .container{
@@ -45,6 +45,17 @@ color: #86B858;
 font-size: 1.5em;
 }
 
+.btn2{
+ position: relative;
+ left: 45%;
+  background-color: #86B858;
+  color: #d43b54;
+  border: none;
+  border-radius: 3%;
+  padding: 2%;
+  transform: translateX(-42%);
+}
+
 @media (max-width: 768px){
   .Myinput{
     display: flex;
@@ -70,5 +81,11 @@ font-size: 1.5em;
   }
   .container{
     margin: 0 auto;
+  }
+
+  .btn2{
+    position: relative;
+    left: 50%;
+    transform: translateX(-42%);
   }
 }
